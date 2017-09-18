@@ -3922,3 +3922,49 @@ img {
 }
 
 /* FIM MULTILANGUAGE*/
+
+/* Alterações Hiperstream */
+body{
+    margin:0;
+}
+
+.acesso-portal{
+    width:20%;
+    height: 100vh;
+    background-color: #ffffff;
+    padding:2em;
+    float:left;
+    margin:0;
+}
+
+.acesso-portal > a > img{
+    margin-left:auto;
+    margin-right:auto;
+    width:300px;
+    height:134px;
+    display:block;
+}
+
+.acesso-portal > h4{
+    font-weight:normal;
+    text-align: center;
+}
+
+.acesso-portal > a.btn{
+    width:60%;
+    margin:2em auto;
+    display:block;
+}
+
+.acesso-portal > a.acesso{
+    margin:2em auto;
+    display: block;
+    width: 15%;
+}
+
+.imagem-mkt{
+    width:80%;
+    height: 100%;
+    background-color:#7c7c7c;
+    float:right;
+}
