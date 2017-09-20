@@ -4037,3 +4037,27 @@ body{
     margin-left: -30px;
 }
 
+.tabela-resultados{
+    margin:30px 0 50px;
+}
+
+.delete-linha{
+    background:url(../img/trash.png) no-repeat;
+    width:22px;
+    height:29px;
+    display:block;
+    font-size:12px;
+    cursor:pointer;
+    text-indent: 25px;
+    line-height: 32px;
+}
+
+.delete-linha:hover{
+    background:url(../img/trash_hover.png) no-repeat;
+    color:#e27800;
+}
+
+.tabela-resultados .table td, .tabela-resultados .table th {
+    text-align: left;
+}
+
