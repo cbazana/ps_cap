@@ -4057,7 +4057,58 @@ body{
     color:#e27800;
 }
 
+.visualizar-linha{
+    background:url(../img/visualizar.png) no-repeat;
+    width:22px;
+    height:29px;
+    display:block;
+    font-size:12px;
+    cursor:pointer;
+    text-indent: 25px;
+    line-height: 32px;
+    float: left;
+}
+
+.visualizar-linha:hover{
+    background:url(../img/visualizar_hover.png) no-repeat;
+    color:#e27800;
+}
+
+.baixar-linha{
+    background:url(../img/baixar.png) no-repeat;
+    width:22px;
+    height:29px;
+    display:block;
+    font-size:12px;
+    cursor:pointer;
+    text-indent: 25px;
+    line-height: 32px;
+    float: right;
+}
+
+.baixar-linha:hover{
+    background:url(../img/baixar_hover.png) no-repeat;
+    color:#e27800;
+}
+
 .tabela-resultados .table td, .tabela-resultados .table th {
     text-align: left;
 }
 
+label{
+    width:100%;
+}
+
+.form-check-label{
+    margin-top:6px;
+}
+
+.selecao-form .dropdown button:after {
+    content: "";
+    background: url(../img/ico-arrow-dropdown.png) no-repeat center center;
+    width: 12px;
+    height: 6px;
+    position: absolute;
+    right: 15px;
+    top: 17px;
+}
