@@ -88,12 +88,12 @@
         <div class="col-lg-6 col-sm-12 col-lg-offset-3 col-md-8 col-md-offset-2">
             <form action="/umbraco/Surface/FaleConosco/SendRelacionamento" data-ajax="true" data-ajax-begin="OnFormBegin()" data-ajax-failure="ShowError()" data-ajax-method="POST" data-ajax-mode="replace" data-ajax-success="ShowSuccess()" data-ajax-update="#target" id="relacionamento" method="post" role="form" style="" novalidate="novalidate"><input data-val="true" data-val-required="Favor informe um assunto" id="Assunto" name="Assunto" type="hidden" value="Solicitações">        
                 <!-- Título -->
-                <div class="form-group col-sm-6">
+                <div class="form-group col-sm-12">
                     <label for="titulo">Título:*</label>
                     <input class="form-control" data-val="true" data-val-required="Este campo precisa ser preenchido" id="titulo" name="titulo" type="text" value="">
                 </div>
                 <!-- Link -->
-                <div class="form-group col-sm-6">
+                <div class="form-group col-sm-12">
                         <label for="link">Link:*</label>
                         <input class="form-control" data-val="true" data-val-required="Este campo precisa ser preenchido" id="link" name="link" type="text" value="">
                     </div>
@@ -123,19 +123,16 @@
         <div class="clearfix"></div>
 
         <div class="tabela-resultados">
+            <div class="container">
                 <div class="navegacao-news clearfix">
-                        <div class="paginacao pull-right">
-            
-                            <p class="paginas"><span>•</span> Página 1 de 10</p>
-            
-                            <div class="prev-next">
-                                <a href="#" class="disabled"><span>«</span> Anterior</a>
-                                <a href="?page=2#news">Próximo <span>»</span></a>
-                            </div>
-            
+                    <div class="paginacao pull-right">
+                        <p class="paginas"><span>•</span> Página 1 de 10</p>
+                        <div class="prev-next">
+                            <a href="#" class="disabled"><span>«</span> Anterior</a>
+                            <a href="?page=2#news">Próximo <span>»</span></a>
                         </div>
                     </div>
-            <div class="container">
+                </div>
                 <table class="table">
                     <thead>
                         <tr>
@@ -163,17 +160,14 @@
                     </tbody>
                 </table>
                 <div class="navegacao-news clearfix">
-                        <div class="paginacao pull-right">
-            
-                            <p class="paginas"><span>•</span> Página 1 de 10</p>
-            
-                            <div class="prev-next">
-                                <a href="#" class="disabled"><span>«</span> Anterior</a>
-                                <a href="?page=2#news">Próximo <span>»</span></a>
-                            </div>
-            
+                    <div class="paginacao pull-right">
+                        <p class="paginas"><span>•</span> Página 1 de 10</p>
+                        <div class="prev-next">
+                            <a href="#" class="disabled"><span>«</span> Anterior</a>
+                            <a href="?page=2#news">Próximo <span>»</span></a>
                         </div>
                     </div>
+                </div>
             </div><!--container-->
         </div>
     </div>
