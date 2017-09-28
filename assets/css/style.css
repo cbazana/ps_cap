@@ -21,7 +21,7 @@ a {
 }
 
     a:hover {
-        color: #e27800;
+        color: #e27800; 
     }
 
     a:focus {
@@ -1737,8 +1737,8 @@ span.sac {
 .rodape {
     border-top: 1px solid #fff;
     font-size: 11px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
     background-color: #e27800;
     font-size: 10px;
 }
@@ -1763,7 +1763,7 @@ span.sac {
 }
 
 .rodape p {
-    padding: 20px 20px 20px 0;
+    padding: 28px 20px 28px 0;
     color: #ffffff;
     font-size: 11px;
     float: left;
@@ -1779,7 +1779,7 @@ span.sac {
 
 .rodape a {
     float: right;
-    padding: 20px 5px;
+    padding: 28px 5px;
     color: #ffffff;
 }
 
@@ -3929,7 +3929,7 @@ body{
 }
 
 .acesso-portal{
-    width:20%;
+    width:25%;
     height: 100vh;
     background-color: #ffffff;
     padding:2em;
@@ -3940,12 +3940,12 @@ body{
 .acesso-portal > a > img{
     margin-left:auto;
     margin-right:auto;
-    width:300px;
-    height:134px;
+    max-width:100%;
+    height:auto;
     display:block;
 }
 
-.acesso-portal > h4{
+.acesso-portal > h5{
     font-weight:normal;
     text-align: center;
 }
@@ -3954,12 +3954,14 @@ body{
     width:60%;
     margin:2em auto;
     display:block;
+    font-size:14px;
 }
 
-.acesso-portal > a.acesso{
-    margin:2em auto;
+.acesso-portal > a.acesso {
+    margin: 2em auto;
     display: block;
-    width: 15%;
+    width: 20%;
+    font-size:14px;
 }
 
 .imagem-mkt{
@@ -4017,6 +4019,7 @@ body{
 
 .cards-dados-cadastrais > div > div > p{
     margin:20px 0;
+    font-size:14px;
 }
 
 .cards-dados-cadastrais > div > div > p > a{
@@ -4043,7 +4046,6 @@ body{
 
 .delete-linha{
     background:url(../img/trash.png) no-repeat;
-    width:22px;
     height:29px;
     display:block;
     font-size:12px;
@@ -4059,14 +4061,12 @@ body{
 
 .visualizar-linha{
     background:url(../img/visualizar.png) no-repeat;
-    width:22px;
     height:29px;
     display:block;
     font-size:12px;
     cursor:pointer;
     text-indent: 25px;
     line-height: 32px;
-    float: left;
 }
 
 .visualizar-linha:hover{
@@ -4076,14 +4076,12 @@ body{
 
 .baixar-linha{
     background:url(../img/baixar.png) no-repeat;
-    width:22px;
     height:29px;
     display:block;
     font-size:12px;
     cursor:pointer;
     text-indent: 25px;
     line-height: 32px;
-    float: right;
 }
 
 .baixar-linha:hover{
