@@ -2612,6 +2612,7 @@ ul.nav-tabs li.active:hover .tab-content > .active {
     .tabela-resultados .table {
         font-size: 16px;
         margin-bottom: 0;
+        margin-left: -12px;
     }
 
         .tabela-resultados .table thead {
@@ -2768,6 +2769,7 @@ ul.nav-tabs li.active:hover .tab-content > .active {
 .paginacao {
     font-size: 16px;
     padding-top: 2px;
+    padding-right: 12px;
 }
 
     .paginacao .paginas {
@@ -3932,7 +3934,7 @@ body{
     width:25%;
     height: 100vh;
     background-color: #ffffff;
-    padding:2em;
+    padding:2em 2.5em;
     float:left;
     margin:0;
 }
@@ -3964,11 +3966,22 @@ body{
     font-size:14px;
 }
 
+.pagina-index{
+    width:100%;
+    margin:0;
+}
+
 .imagem-mkt{
-    width:80%;
-    height: 100%;
+    width:75%;
     background-color:#7c7c7c;
-    float:right;
+    float:right
+}
+
+.imagem-mkt > img{
+    background-repeat: no-repeat;
+    max-width:100%;
+    width:100%!important;
+    height:100vh;
 }
 
 .logo-header{
@@ -3989,7 +4002,7 @@ body{
 }
 
 .top-header .bright {
-    width: 5%;
+    width: 13%;
 }
 
 .container.center.map-end {
@@ -4109,4 +4122,82 @@ label{
     position: absolute;
     right: 15px;
     top: 17px;
+}
+
+@media (min-width:992px) and (max-width: 1023px){
+    .imagem-mkt{
+        display:none;
+    }
+
+    .acesso-portal{
+        width:100%;
+    }
+
+    .acesso-portal > a.btn{
+        width:20%;
+    }
+
+    .acesso-portal > a.acesso {
+        margin: 2em auto;
+        display: block;
+        width: 6%;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 769px) and (max-width:991px){
+    .imagem-mkt{
+        display:none;
+    }
+
+    .acesso-portal{
+        width:100%;
+    }
+
+    .acesso-portal > a.btn{
+        width:20%;
+    }
+
+    .menu2 {
+        margin-top: 100px;
+        margin-left: 15px;
+    }
+
+    .navbar-header {
+        padding-top: 0;
+    }
+}
+
+@media (max-width:768px){
+    .acesso-portal > a.btn {
+        width: 40%;
+    }
+
+    .imagem-mkt{
+        display:none;
+    }
+
+    .acesso-portal{
+        width:100%;
+    }
+
+    .acesso-portal > a.acesso {
+        text-align:center;
+    }
+
+    .logo-header > a > img {
+        height: 66px;
+    }
+
+    .logo-header {
+        top: 10px;
+    }
+
+    .navbar-default{
+        background-color:#fff;
+    }
+
+    .navbar{
+        background-color:#fff;
+    }
 }
