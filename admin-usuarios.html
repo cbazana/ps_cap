@@ -31,57 +31,57 @@
   <![endif]-->
 </head>
 <body>
-    <div class="header">
-        <!-- //Barra superior - controle de tamanho do texto// -->
-        <div class="top-header mobile-top-fixed">
-            <div class="container">
-                <!-- //Logo// -->
-                <div class="logo-header">
-                    <a href="home.html"><img src="assets/img/logo-capemisa.png" alt="Capemisa Seguradora"></a>
-                </div>
-
-                <div class="bright">
-                    <a href="javascript:mudaTamanho('texto', -1);"><p class="size1">A-</p></a>
-                    <a href="javascript:mudaTamanho('texto', 1);"><p class="size2">A+</p></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="navbar navbar-default navbar-static-top hidden-xs">
-                <ul class="nav navbar-nav menu2">
-                        <div class="container">
-                                <li class="dropdown menu-large menu-head">
-                                    <a href="consulta-documentos.html"><b class="glyphicon glyphicon-menu-right"></b>CONSULTA DE DOCUMENTOS</a>
-                                </li>
-                                <li class="dropdown menu-large menu-head">
-                                        <a href="http://www.capemisa.com.br/fale-com-um-especialista/" target="new"><b class="glyphicon glyphicon-menu-right"></b>FALE CONOSCO</a>
-                                </li>
-                                <li class="dropdown menu-large menu-head">
-                                    <a href="#"><b class="glyphicon glyphicon-menu-right"></b>ADMINISTRATIVO</a>
-        
-                                <!-- //Menu Principal: Nível 2: Para você// -->
-                                        <ul class="dropdown-menu megamenu row submenu1">
-                                            <div class="container submenu" style="">
-                                                    <li class="top dropdown menu-large submenu2">
-                                                        <a href="admin-usuarios.html" class="dropdown-toggle" data-toggle="&quot;dropdown&quot;"><p>Cadastro de Usuários</p> </a>
-                                                    </li>
-                                                    <li class="top dropdown menu-large submenu2">
-                                                        <a href="admin-banner.html" class="dropdown-toggle" data-toggle="&quot;dropdown&quot;"><p>Cadastro de Banner</p> </a>
-                                                    </li>
-                                                    <li class="top dropdown menu-large submenu2">
-                                                        <a href="admin-noticias.html" class="dropdown-toggle active" data-toggle="&quot;dropdown&quot;"><p>Cadastro de Notícias</p> </a>
-                                                    </li>
-                                            </div>
-                                        </ul>
-                                </li>
-                                <li class="dropdown menu-large menu-head">
-                                    <a href="index.html"><b class="glyphicon glyphicon-menu-right"></b>SAIR</a>
-                                </li>
+        <div class="header">
+                <!-- //Barra superior - controle de tamanho do texto// -->
+                <div class="top-header mobile-top-fixed">
+                    <div class="container">
+                        <!-- //Logo// -->
+                        <div class="logo-header">
+                            <a href="home.html"><img src="assets/img/logo-capemisa.png" alt="Capemisa Seguradora"></a>
                         </div>
-                    </ul>
-            <div class="navbar-header"></div>
-        </div>
-    </div>  
+        
+                        <div class="bright">
+                            <a href="javascript:mudaTamanho('texto', -1);"><p class="size1">A-</p></a>
+                            <a href="javascript:mudaTamanho('texto', 1);"><p class="size2">A+</p></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="navbar navbar-default navbar-static-top hidden-xs">
+                        <ul class="nav navbar-nav menu2">
+                                <div class="container">
+                                        <li class="dropdown menu-large menu-head">
+                                            <a href="consulta-documentos.html"><b class="glyphicon glyphicon-menu-right"></b>CONSULTA DE DOCUMENTOS</a>
+                                        </li>
+                                        <li class="dropdown menu-large menu-head">
+                                                <a href="http://www.capemisa.com.br/fale-com-um-especialista/" target="new"><b class="glyphicon glyphicon-menu-right"></b>FALE CONOSCO</a>
+                                        </li>
+                                        <li class="dropdown menu-large menu-head">
+                                            <a href="#"><b class="glyphicon glyphicon-menu-right"></b>ADMINISTRATIVO</a>
+                
+                                        <!-- //Menu Principal: Nível 2: Para você// -->
+                                                <ul class="dropdown-menu megamenu row submenu1">
+                                                    <div class="container submenu" style="">
+                                                            <li class="top dropdown menu-large submenu2">
+                                                                <a href="admin-usuarios.html" class="dropdown-toggle" data-toggle="&quot;dropdown&quot;"><p>Cadastro de Usuários</p> </a>
+                                                            </li>
+                                                            <li class="top dropdown menu-large submenu2">
+                                                                <a href="admin-banner.html" class="dropdown-toggle" data-toggle="&quot;dropdown&quot;"><p>Cadastro de Banner</p> </a>
+                                                            </li>
+                                                            <li class="top dropdown menu-large submenu2">
+                                                                <a href="admin-noticias.html" class="dropdown-toggle active" data-toggle="&quot;dropdown&quot;"><p>Cadastro de Notícias</p> </a>
+                                                            </li>
+                                                    </div>
+                                                </ul>
+                                        </li>
+                                        <li class="dropdown menu-large menu-head">
+                                            <a href="index.html"><b class="glyphicon glyphicon-menu-right"></b>SAIR</a>
+                                        </li>
+                                </div>
+                            </ul>
+                    <div class="navbar-header"></div>
+                </div>
+            </div>  
 
     <div class="container">
         <h1 class="title-line"><span>CADASTRO DE USUÁRIOS</span></h1>
@@ -100,15 +100,43 @@
                 <!-- Status -->
                 <div class="form-group col-sm-6">
                     <label for="descricao">Status:*</label>
-                    <label class="form-check-label" for="status">
-                        <input class="form-check-input" type="checkbox" value=""> Ativo
-                    </label>
+                    <div class="checkbox ajuste-vertical">
+                        <label>
+                            <input type="checkbox"> Ativo
+                        </label>
+                    </div>
                 </div>
                 <!-- Permissões -->
                 <div class="form-group col-sm-12">
                     <!-- TODO: Ler do banco-->
-                    <label for="allWords" class="with-textbox">Permissões</label>
-                    
+                    <label for="allWords" class="with-textbox">Permissões:</label>
+                    <div class="tree well">
+                        <ul>
+                            <li>
+                                <span class="elemento-pai"> Informações</span>
+                                <ul>
+                                    <li>
+                                        <span>
+                                            <div class="checkbox">
+                                                <label>
+                                                  <input type="checkbox"> Cadastrar notícia
+                                                </label>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"> Cadastrar produto
+                                                </label>
+                                            </div>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <!-- ENVIAR -->
                 <div class="form-group col-sm-12">
@@ -136,26 +164,24 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th class="align-left tit-sort">Banner</th>
-                            <th class="tit-sort">Data</th>
+                            <th class="align-left tit-sort">Nome</th>
+                            <th class="tit-sort">Login</th>
+                            <th class="tit-sort">Status</th>
                             <th class="tit-sort">Ação</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th class="align-left" scope="row">Vida</th>
-                            <td>22/08/2017</td>
-                            <td><a href="#"><span class="delete-linha">Excluir</span></a></td>
+                            <th class="align-left" scope="row">Paulo Gusmão</th>
+                            <td>p.gusmao</td>
+                            <td>Ativo</td>
+                            <td><a href="#"><span class="delete-linha">Editar</span></a></td>
                         </tr>
                         <tr>
-                            <th class="align-left" scope="row">Previdência</th>
-                            <td>02/08/2017</td>
-                            <td><a href="#"><span class="delete-linha">Excluir</span></a></td>
-                        </tr>
-                        <tr>
-                            <th class="align-left" scope="row">Acidentes Pessoais</th>
-                            <td>27/07/2017</td>
-                            <td><a href="#"><span class="delete-linha">Excluir</span></a></td>
+                            <th class="align-left" scope="row">Rebecca Marques</th>
+                            <td>r.marques</td>
+                            <td>Ativo</td>
+                            <td><a href="#"><span class="delete-linha">Editar</span></a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -199,5 +225,27 @@
             </div>
         </div>
     </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+            $(function () {
+                $('.tree li:has(ul)').addClass('parent_li').find(' > span').attr('title', 'Collapse this branch');
+                $('.tree li.parent_li > span').on('click', function (e) {
+                    var children = $(this).parent('li.parent_li').find(' > ul > li');
+                    if (children.is(":visible")) {
+                        children.hide('fast');
+                        $(this).attr('title', 'Expand this branch').find(' > i').addClass('icon-plus-sign').removeClass('icon-minus-sign');
+                    } else {
+                        children.show('fast');
+                        $(this).attr('title', 'Collapse this branch').find(' > i').addClass('icon-minus-sign').removeClass('icon-plus-sign');
+                    }
+                    e.stopPropagation();
+                });
+            });
+    </script>
 </body>
 </html>

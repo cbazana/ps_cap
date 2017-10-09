@@ -4124,6 +4124,90 @@ label{
     top: 17px;
 }
 
+.ajuste-vertical{
+    margin-top:19px!important;
+}
+
+/* Treeview */
+.tree {
+    min-height:20px;
+    padding:0 15px 15px 0;
+    margin-bottom:20px;
+}
+.tree ul, ol {
+    padding: 0;
+    margin: 0 0 10px 19px;
+}
+
+.tree li {
+    list-style-type:none;
+    margin:0;
+    padding:10px 5px 0 0;
+    position:relative
+}
+.tree li::before, .tree li::after {
+    content:'';
+    left:-20px;
+    position:absolute;
+    right:auto
+}
+.tree li::before {
+    border-left:1px solid #999;
+    bottom:50px;
+    height:100%;
+    top:0;
+    width:1px
+}
+.tree li::after {
+    border-top:1px solid #999;
+    height:20px;
+    top:25px;
+    width:25px
+}
+.tree li span {
+    display:inline-block;
+    padding:3px 8px 3px 8px;
+    text-decoration:none
+}
+.tree li.parent_li>span {
+    cursor:pointer
+}
+.tree>ul>li::before, .tree>ul>li::after {
+    border:0
+}
+.tree li:last-child::before {
+    height:30px
+}
+.tree>ul>li>.elemento-pai{
+  margin-left:-10px;
+}
+
+.well {
+    min-height: 20px;
+    padding: 0 19px 19px 0;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border:none;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 0 0 rgba(0,0,0,0);
+    box-shadow: inset 0 0 0 rgba(0,0,0,0);
+}
+
+.checkbox label, .radio label {
+    padding-left:0;
+    min-height: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.checkbox, .radio {
+    position: relative;
+    display: block;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+
 @media (min-width:992px) and (max-width: 1023px){
     .imagem-mkt{
         display:none;
@@ -4199,5 +4283,11 @@ label{
 
     .navbar{
         background-color:#fff;
+    }
+}
+
+@media (max-width: 767px){
+    .navbar {
+        min-height: 66px;
     }
 }

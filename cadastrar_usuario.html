@@ -31,28 +31,104 @@
   <![endif]-->
 </head>
 <body>
-    <div class="header">
-        <!-- //Barra superior - controle de tamanho do texto// -->
-        <div class="top-header mobile-top-fixed">
-            <div class="container">
-                <!-- //Logo// -->
-                <div class="logo-header">
-                    <a href="index.html"><img src="assets/img/logo-capemisa.png" alt="Capemisa Seguradora"></a>
-                </div>
-
-                <div class="bright">
-                    <a href="javascript:mudaTamanho('texto', -1);"><p class="size1">A-</p></a>
-                    <a href="javascript:mudaTamanho('texto', 1);"><p class="size2">A+</p></a>
+        <div class="header">
+            <!-- //Barra superior - controle de tamanho do texto// -->
+            <div class="top-header mobile-top-fixed">
+                <div class="container">
+                    <!-- //Logo// -->
+                    <div class="logo-header">
+                        <a href="home.html"><img src="assets/img/logo-capemisa.png" alt="Capemisa Seguradora"></a>
+                    </div>
+                    <div class="bright">
+                        <a href="javascript:mudaTamanho('texto', -1);"><p class="size1">A-</p></a>
+                        <a href="javascript:mudaTamanho('texto', 1);"><p class="size2">A+</p></a>
+                    </div>
                 </div>
             </div>
+            <div class="navbar navbar-default navbar-static-top hidden-xs">
+                <ul class="nav navbar-nav menu2">
+                    <div class="container">
+                        <li class="dropdown menu-large menu-head">
+                            <a href="consulta-documentos.html"><b class="glyphicon glyphicon-menu-right"></b>CONSULTA DE DOCUMENTOS</a>
+                        </li>
+                        <li class="dropdown menu-large menu-head">
+                            <a href="http://www.capemisa.com.br/fale-com-um-especialista/" target="new"><b class="glyphicon glyphicon-menu-right"></b>FALE CONOSCO</a>
+                        </li>
+                        <li class="dropdown menu-large menu-head">
+                            <a href="#"><b class="glyphicon glyphicon-menu-right"></b>ADMINISTRATIVO</a>
+                            <!-- //Menu Principal: Nível 2: Para você// -->
+                            <ul class="dropdown-menu megamenu row submenu1">
+                                <div class="container submenu" style="">
+                                    <li class="top dropdown menu-large submenu2">
+                                        <a href="admin-usuarios.html" class="dropdown-toggle" data-toggle="&quot;dropdown&quot;"><p>Cadastro de Usuários</p> </a>
+                                    </li>
+                                    <li class="top dropdown menu-large submenu2">
+                                        <a href="admin-banner.html" class="dropdown-toggle" data-toggle="&quot;dropdown&quot;"><p>Cadastro de Banner</p> </a>
+                                    </li>
+                                    <li class="top dropdown menu-large submenu2">
+                                        <a href="admin-noticias.html" class="dropdown-toggle" data-toggle="&quot;dropdown&quot;"><p>Cadastro de Notícias</p> </a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="dropdown menu-large menu-head">
+                            <a href="index.html"><b class="glyphicon glyphicon-menu-right"></b>SAIR</a>
+                        </li>
+                    </div>
+                </ul>
+                <div class="navbar-header"></div>
+            </div>
+            <div class="navbar navbar-default navbar-static-top visible-xs mobile-top-fixed">
+                <!--<div class="container">-->
+                <!-- //Menu// -->
+                <div class="navbar-header">    
+                    <div id="dl-menu" class="dl-menuwrapper">
+                        <!-- //Mobile Button// -->
+                        <button class="dl-trigger">
+                            <div class="icon-hamburguer">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="icon-remove">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </button>
+                        <ul class="dl-menu">
+                            <!-- //Menu Principal: Nível 1// -->
+                            <li>
+                                <a href="consulta-documentos.html">CONSULTA DE DOCUMENTOS</a>
+                            </li>
+                            <li>
+                                <a href="http://www.capemisa.com.br/fale-com-um-especialista/">FALE CONOSCO</a>
+                            </li>
+                            <li>
+                                <a href="#">ADMINISTRATIVO</a>
+                                <ul class="dl-submenu">
+                                    <li class="dl-back">
+                                        <a href="">ADMINISTRATIVO</a>
+                                    </li>
+                                    <li>
+                                        <a href="admin-usuarios.html">CADASTRO DE USUÁRIOS</a>
+                                    </li>
+                                    <li>
+                                        <a href="admin-banner.html">CADASTRO DE BANNER</a>
+                                    </li>
+                                    <li>
+                                        <a href="admin-noticias.html">CADASTRO DE NOTÍCIAS</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="index.html">SAIR</a>
+                            </li>
+                        </ul>
+                    </div><!-- /dl-menuwrapper -->
+                </div><!--navbar-header-->
+                <!--</div>container-->
+            </div>
         </div>
-
-        <div class="navbar navbar-default navbar-static-top hidden-xs">
-            <!--<div class="container">-->
-            <!-- //Menu// -->
-            <div class="navbar-header"></div>
-        </div>
-    </div>
 
     <div class="container">
         <h1 class="title-line"><span>CADASTRO DE ACESSO</span></h1>
@@ -154,5 +230,10 @@
             </div>
         </div>
     </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
