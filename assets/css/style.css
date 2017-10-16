@@ -4205,6 +4205,18 @@ label{
     display: block;
     margin-top: 3px;
     margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+
+@media (min-width:1281px) and (max-width: 1366px){
+    .imagem-mkt {
+        width: 66%;
+    }
+
+    .acesso-portal {
+        width: 34%;
+    }
 }
 
 
@@ -4289,5 +4301,14 @@ label{
 @media (max-width: 767px){
     .navbar {
         min-height: 66px;
+    }
+
+    .rodape .logo-rodape img{
+        float:left!important;
+    }
+
+    .tabela-resultados {
+        margin: 30px 0 0 15px;
+        width:100%;
     }
 }
