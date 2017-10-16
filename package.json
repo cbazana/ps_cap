@@ -1,0 +1,24 @@
+{
+  "name": "ps_cap",
+  "version": "1.0.0",
+  "description": "Portal Espaço do Cliente CAPEMISA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cbazana/ps_cap.git"
+  },
+  "author": "Cassio Bazana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cbazana/ps_cap/issues"
+  },
+  "homepage": "https://github.com/cbazana/ps_cap#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-imagemin": "^2.3.0"
+  }
+}
